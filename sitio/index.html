@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redes II · Arquitectura de tres capas en AWS</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- PERSONALICE AQUI: titulo, descripcion y nombres del grupo -->
+  <header>
+    <p class="etiqueta">Práctica Final · Redes II</p>
+    <h1>Arquitectura de tres capas en AWS</h1>
+    <p class="sub">Página estática en <b>S3 + CloudFront</b> · API en <b>EC2</b> detrás de un <b>balanceador</b> · datos en <b>RDS PostgreSQL</b></p>
+    <p class="grupo">Equipo de Redes II · <span>Angela Chiyal · Evelyn Guarchaj · Ana Vicente</span></p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>01 · ¿Qué servidor respondió?</h2>
+      <p>Cada clic pasa por CloudFront y el balanceador, que elige uno de los servidores.</p>
+      <div class="servidor">
+        <div><span class="dato" id="srv-id">—</span><span class="nombre">Servidor (ID de instancia)</span></div>
+        <div><span class="dato" id="srv-zona">—</span><span class="nombre">Zona de disponibilidad</span></div>
+        <div><span class="dato" id="srv-bd">—</span><span class="nombre">Base de datos</span></div>
+      </div>
+      <button id="btn-preguntar">Volver a preguntar</button>
+      <p class="historial" id="historial"></p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>02 · Distribución de la carga</h2>
+      <p>Peticiones registradas en PostgreSQL por cada servidor. Se actualiza cada 5 segundos.</p>
+      <p class="total">Total: <b id="total">0</b> peticiones</p>
+      <div id="barras"></div>
+      <button id="btn-visita">Registrar 10 visitas</button>
+    </section>
+
+    <section class="tarjeta ancha">
+      <h2>03 · Libro de visitas</h2>
+      <form id="formulario">
+        <input id="nombre" placeholder="Su nombre" maxlength="80" required>
+        <input id="mensaje" placeholder="Su mensaje" maxlength="500" required>
+        <button type="submit">Publicar</button>
+      </form>
+      <ul id="mensajes"></ul>
+    </section>
+  </main>
+
+  <footer>Proyecto integrador de Redes II · AWS CloudFront, S3, EC2 y PostgreSQL</footer>
+  <script src="app.js"></script>
+</body>
+</html>
