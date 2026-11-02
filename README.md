@@ -334,32 +334,9 @@ El costo real debe comprobarse mediante AWS Cost Explorer, considerando el tiemp
 
 **Costo real registrado:** [Completar con AWS Cost Explorer]
 
-## 11. Evidencias
 
-Se recopilaron capturas correspondientes a:
-
-- Pila CloudFormation creada correctamente.
-- Salidas de CloudFormation.
-- Sitio web funcionando mediante CloudFront.
-- Mapa de recursos de la VPC.
-- Subredes y tablas de rutas.
-- Grupos de seguridad.
-- Pruebas de conectividad.
-- Instancias EC2 saludables.
-- Consultas en PostgreSQL.
-- Distribución de solicitudes entre servidores.
-- Resultados de Apache Bench.
-- Escalado automático de instancias.
-- Prueba de falla de un servidor.
-- Interfaz web personalizada.
-- Respuesta de `/api/hola`.
-- Invalidación completada en CloudFront.
-
-Las evidencias de las primeras fases se encuentran documentadas en el archivo de pruebas elaborado por el equipo.
 
 ## 12. Video de demostración
-
-El equipo realizará una presentación en video con una duración aproximada de 6 a 8 minutos.
 
 Durante la demostración se explicará la arquitectura implementada, la configuración de red, las pruebas de balanceo, el escalado automático, la tolerancia a fallos y las modificaciones realizadas.
 
@@ -372,8 +349,6 @@ Una vez finalizadas las pruebas y la demostración, se debe eliminar la infraest
 El procedimiento consiste en vaciar el bucket de S3 y eliminar la pila `PracticaIntegradora` desde AWS CloudFormation.
 
 Posteriormente debe verificarse que la pila haya alcanzado el estado `DELETE_COMPLETE` y que no permanezcan recursos activos asociados a la práctica.
-
-**Estado de limpieza:** Pendiente de confirmación.
 
 **Evidencia:** [Agregar captura de DELETE_COMPLETE]
 
