@@ -6,9 +6,9 @@
 **Fecha:** 2 de noviembre de 2026
 
 **Integrantes:**
-- Integrante 1: [Angela Gabriela Chiyal Pérez]
-- Integrante 2: [Evelyn Jeaneth Guarchaj Tahay]
-- Integrante 3: [Ana Valeria Vicente Axpuac]
+- Integrante 1: Angela Gabriela Chiyal Pérez
+- Integrante 2: Evelyn Jeaneth Guarchaj Tahay
+- Integrante 3: Ana Valeria Vicente Axpuac
 
 ---
 
