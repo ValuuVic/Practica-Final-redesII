@@ -154,9 +154,9 @@ ab -n 2000 -c 20 $API
 | Concurrencia | 20 |
 | Peticiones completadas | 2,000 |
 | Peticiones fallidas | 0 |
-| Peticiones por segundo | [Completar con resultado de Apache Bench] |
-| Tiempo promedio por petición | [Completar] |
-| Percentil 95 de respuesta | [Completar] |
+| Peticiones por segundo | 2262.09 |
+| Tiempo promedio por petición | 0.442 |
+| Percentil 95 de respuesta | 14ms |
 
 Los resultados permitieron comprobar que la aplicación atendió las solicitudes de la prueba sin registrar peticiones fallidas.
 
@@ -298,13 +298,6 @@ Esta modificación permitió demostrar que la infraestructura puede actualizarse
 ## 8. Rutas de la API
 
 | Método | Ruta | Descripción |
-|---|---|---|
-| GET | `/api/ping` | Verificación de salud |
-| GET | `/api/salud` | Información del servidor y PostgreSQL |
-| GET | `/api/visita` | Registro de una visita |
-| GET | `/api/estadisticas` | Estadísticas de peticiones |
-| GET | `/api/mensajes` | Consulta de mensajes |
-| POST | `/api/mensajes` | Registro de mensajes |
 | GET | `/api/hola` | Ruta personalizada del grupo |
 
 ## 9. Estructura del proyecto
@@ -330,17 +323,9 @@ Según la guía de la práctica, se estimó un costo aproximado de US$0.09 por h
 
 El costo estimado de mantener los recursos activos durante el período de viernes a lunes era de aproximadamente US$7.
 
-El costo real debe comprobarse mediante AWS Cost Explorer, considerando el tiempo de utilización y los recursos desplegados.
-
-**Costo real registrado:** [Completar con AWS Cost Explorer]
-
-
-
 ## 12. Video de demostración
 
-Durante la demostración se explicará la arquitectura implementada, la configuración de red, las pruebas de balanceo, el escalado automático, la tolerancia a fallos y las modificaciones realizadas.
-
-**Enlace del video:** [Agregar enlace]
+¡[https://www.canva.com/design/DAHZ1I-JR5Y/D98E2y0VxgdcqxhFtz2UQg/watch?utm_content=DAHZ1I-JR5Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb94ef7c25d]
 
 ## 13. Limpieza de recursos AWS
 
@@ -350,7 +335,9 @@ El procedimiento consiste en vaciar el bucket de S3 y eliminar la pila `Practica
 
 Posteriormente debe verificarse que la pila haya alcanzado el estado `DELETE_COMPLETE` y que no permanezcan recursos activos asociados a la práctica.
 
-**Evidencia:** [Agregar captura de DELETE_COMPLETE]
+**Evidencia:** <img width="1600" height="820" alt="WhatsApp Image 2026-11-02 at 23 28 29" src="https://github.com/user-attachments/assets/b46e374e-57a4-4ca5-a425-75da35ccb48e" />
+
+<img width="1600" height="820" alt="WhatsApp Image 2026-11-02 at 23 14 20" src="https://github.com/user-attachments/assets/638a99ce-20a8-407b-8a39-f365ac59bee1" />
 
 ## 14. Conclusiones
 
